@@ -442,6 +442,7 @@ body {
 }
 
 .container {
+  min-width: 320px;
   width: 320px;
   padding: 0 15px;
   margin: auto;
@@ -491,4 +492,68 @@ li {
 .header__user img {
   width: 20px;
   height: 20px;
+}
+
+.header__contact-tel {
+  display: none;
+}
+
+.header__contact-tel span {
+  color: #B3B3B3;
+}
+
+.header__contact-tel a {
+  color: #37373F;
+}
+
+@media (min-width: 576px) {
+  .container {
+    width: 576px;
+    padding: 0 35px;
+  }
+
+  .header__logo {
+    margin-right: 36px;
+  }
+
+  .header__contact-tel-min {
+    display: none;
+  }
+
+  .header__contact-tel {
+    display: inline;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding: 0 50px;
+  }
+
+  .header {
+    padding: 39px 0 38px;
+  }
+
+  .header__telogo {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .header__logo img {
+    width: 129px;
+    height: 24px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    width: 1280px;
+    padding: 0 70px;
+  }
+
+  .header__user {
+    display: none;
+  }
 }

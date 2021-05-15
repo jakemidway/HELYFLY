@@ -1,6 +1,9 @@
 .header{
     padding: 20px 0;
     font-size: 1.4rem;
+    @media (min-width: 768px){
+        padding: 39px 0 38px;
+    }
     &__wrapper{
         position: relative;
         display: flex;
@@ -9,18 +12,48 @@
     }
     &__telogo{
         display: flex;
+        @media (min-width: 768px){
+            align-items: center;
+        }
     }
     &__logo{
         margin-right: 45px;
+        @media (min-width: 576px) {
+            margin-right: 36px;
+        }
         img{
             width: 84px;
             height: 16px;
+            @media (min-width: 768px) {
+               width: 129px;
+               height: 24px; 
+            }
         }
     }
     &__user{
         img{
             width: 20px;
             height: 20px;
+        }
+        @media (min-width: 1280px) {
+            display: none;
+        }
+    }
+    &__contact-tel-min{
+        @media (min-width: 576px) {
+            display: none;
+        }
+    }
+    &__contact-tel{
+        display: none;
+        @media (min-width: 576px) {
+            display: inline;
+        }
+        span{
+            color: $colorTextDisable;
+        }
+        a{
+            color: $colorText;
         }
     }
 }
