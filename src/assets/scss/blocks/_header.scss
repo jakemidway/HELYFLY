@@ -1,0 +1,26 @@
+.header{
+    padding: 20px 0;
+    font-size: 1.4rem;
+    &__wrapper{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    &__telogo{
+        display: flex;
+    }
+    &__logo{
+        margin-right: 45px;
+        img{
+            width: 84px;
+            height: 16px;
+        }
+    }
+    &__user{
+        img{
+            width: 20px;
+            height: 20px;
+        }
+    }
+}

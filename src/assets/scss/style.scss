@@ -17,15 +17,22 @@ html {
 }
 
 body {
-    font-size: 2rem;
+    font-size: 1.4rem;
 }
-
+.container{
+    width: 320px;
+    padding: 0 15px;
+    margin: auto;    
+}
+a{
+    text-decoration: none;
+}
 li {
     list-style: none;
 }
 
 
 //blocks
-// @import 
+@import "./blocks/header";
 
 

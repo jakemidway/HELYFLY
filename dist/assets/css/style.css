@@ -434,13 +434,61 @@ template {
 html {
   font-family: 'Montserrat', sans-serif;
   font-size: 10px;
-  color: #413431;
+  color: #37373F;
 }
 
 body {
-  font-size: 2rem;
+  font-size: 1.4rem;
+}
+
+.container {
+  width: 320px;
+  padding: 0 15px;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
 }
 
 li {
   list-style: none;
+}
+
+.header {
+  padding: 20px 0;
+  font-size: 1.4rem;
+}
+
+.header__wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.header__telogo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__logo {
+  margin-right: 45px;
+}
+
+.header__logo img {
+  width: 84px;
+  height: 16px;
+}
+
+.header__user img {
+  width: 20px;
+  height: 20px;
 }
