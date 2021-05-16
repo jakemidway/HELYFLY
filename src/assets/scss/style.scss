@@ -18,6 +18,7 @@ html {
 
 body {
     font-size: 1.4rem;
+    min-width: 320px;
 }
 .container{
     min-width: 320px;
@@ -41,7 +42,7 @@ a{
     text-decoration: none;
 }
 li {
-    list-style: none;
+    list-style: none;       
 }
 
 

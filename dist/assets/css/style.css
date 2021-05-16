@@ -439,6 +439,7 @@ html {
 
 body {
   font-size: 1.4rem;
+  min-width: 320px;
 }
 
 .container {
@@ -510,7 +511,7 @@ li {
   background-color: bisque;
   color: white;
   height: 655px;
-  background: url(./../images/banner/helimain-mob.jpg) bisque 62% center no-repeat;
+  background: url(./../images/banner/helimain-mob.jpg) 62% center no-repeat;
   padding-top: 142px;
 }
 
@@ -595,6 +596,12 @@ li {
   }
 }
 
+@media (min-width: 577px) {
+  .banner {
+    background: url(../images/banner/helimain.jpg) 55% 50%/auto 100% no-repeat;
+  }
+}
+
 @media (min-width: 768px) {
   .container {
     width: 768px;
@@ -617,7 +624,7 @@ li {
   }
 
   .banner {
-    background: url(../images/banner/helimain.jpg) bisque 61% center no-repeat;
+    background: url(../images/banner/helimain.jpg) 55% 50%/auto 100% no-repeat;
     height: 839px;
     padding-top: 286px;
   }
@@ -672,11 +679,37 @@ li {
   .header__user {
     display: none;
   }
+
+  .banner__text {
+    width: 887px;
+  }
 }
 
-.webp .banner { background: url(./../images/banner/helimain-mob.webp) bisque 62% center no-repeat; }
+@media (min-width: 1440px) {
+  .banner {
+    background: url(../images/banner/helimain.webp) 49% 100%/auto 100% no-repeat;
+  }
+}
+
+@media (min-width: 1920px) {
+  .banner {
+    background: url(../images/banner/helimain.jpg) 100% 50% no-repeat;
+  }
+}
+
+.webp .banner { background: url(./../images/banner/helimain-mob.webp) 62% center no-repeat; }
+
+@media (min-width: 577px) {
+
+  .webp .banner { background: url(../images/banner/helimain.webp) 55% 50%/auto 100% no-repeat; }
+}
 
 @media (min-width: 768px) {
 
-  .webp .banner { background: url(../images/banner/helimain.webp) bisque 61% center no-repeat; }
+  .webp .banner { background: url(../images/banner/helimain.webp) 55% 50%/auto 100% no-repeat; }
+}
+
+@media (min-width: 1920px) {
+
+  .webp .banner { background: url(../images/banner/helimain.webp) 100% 50% no-repeat; }
 }
