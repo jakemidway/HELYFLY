@@ -557,6 +557,15 @@ li {
   height: 68px;
   border: 3px solid #FFFFFF;
   border-radius: 7px;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.banner__btn:hover {
+  border: 3px solid #FC9B09;
+  color: #FC9B09;
+  background: rgba(255, 255, 255, 0.7);
 }
 
 .banner__btn-link {

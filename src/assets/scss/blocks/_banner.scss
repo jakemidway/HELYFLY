@@ -108,6 +108,12 @@
         height: 68px;
         border: 3px solid #FFFFFF;
         border-radius: 7px;
+        transition: .5s ease;
+        &:hover{
+            border: 3px solid $colorAccent;
+            color: $colorAccent;
+            background: rgba(255, 255, 255, 0.7);
+        }
 
         @media (min-width:768px) {
             width: 304px;
