@@ -9,6 +9,18 @@
         padding-top: 151px;
     }
 
+    @media (min-width: 768px) {
+        background:url(../images/banner/helimain.jpg) bisque  61% center no-repeat;
+        height: 839px;
+        padding-top: 286px;
+    }
+
+    br {
+        @media (min-width: 768px) {
+            display: none;
+        }
+    }
+
     &__text {
         font-size: 3.2rem;
         line-height: 3.9rem;
@@ -17,6 +29,13 @@
 
         @media (min-width: 576px) {
             margin-bottom: 35px;
+        }
+
+        @media (min-width: 768px) {
+            width: 596px;
+            font-size: 4rem;
+            line-height: 4.9rem;
+            margin-bottom: 20px;
         }
 
         &_accent {
@@ -35,17 +54,36 @@
         background: url(./../images/banner/tag.svg) no-repeat;
         background-size: 100%;
         margin-bottom: 14px;
+
+        @media (min-width:768px) {
+            width: 224px;
+            height: 96px;
+            font-size: 2rem;
+            line-height: 1.4rem;
+            padding: 16px 29px 28px 23px;
+            margin-bottom: 12px;
+        }
     }
 
     &__price {
         font-size: 3rem;
         line-height: 5.5rem;
         font-weight: 800;
+
+        @media (min-width:768px) {
+            font-size: 3.5rem;
+            line-height: 5.1rem;
+        }
     }
 
     &__img-proc {
         width: 47px;
         height: 47px;
+
+        @media (min-width:768px) {
+            width: 52px;
+            height: 52px;
+        }
     }
 
     &__btn {
@@ -53,6 +91,11 @@
         height: 68px;
         border: 3px solid #FFFFFF;
         border-radius: 7px;
+        @media (min-width:768px){
+            width: 304px;
+            height: 68px;
+            font-size: 1.8rem;
+        }
     }
 
     &__btn-link {
@@ -63,5 +106,8 @@
         height: 100%;
         text-align: center;
         padding: 23px 0;
+        @media (min-width: 768px) {
+            letter-spacing: 0;
+        }
     }
 }

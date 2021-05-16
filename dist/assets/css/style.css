@@ -602,7 +602,7 @@ li {
   }
 
   .header {
-    padding: 39px 0 38px;
+    padding: 39px 0 34px;
   }
 
   .header__telogo {
@@ -614,6 +614,52 @@ li {
   .header__logo img {
     width: 129px;
     height: 24px;
+  }
+
+  .banner {
+    background: url(../images/banner/helimain.jpg) bisque 61% center no-repeat;
+    height: 839px;
+    padding-top: 286px;
+  }
+
+  .banner br {
+    display: none;
+  }
+
+  .banner__text {
+    width: 596px;
+    font-size: 4rem;
+    line-height: 4.9rem;
+    margin-bottom: 20px;
+  }
+
+  .banner__praice-tag {
+    width: 224px;
+    height: 96px;
+    font-size: 2rem;
+    line-height: 1.4rem;
+    padding: 16px 29px 28px 23px;
+    margin-bottom: 12px;
+  }
+
+  .banner__price {
+    font-size: 3.5rem;
+    line-height: 5.1rem;
+  }
+
+  .banner__img-proc {
+    width: 52px;
+    height: 52px;
+  }
+
+  .banner__btn {
+    width: 304px;
+    height: 68px;
+    font-size: 1.8rem;
+  }
+
+  .banner__btn-link {
+    letter-spacing: 0;
   }
 }
 
@@ -629,3 +675,8 @@ li {
 }
 
 .webp .banner { background: url(./../images/banner/helimain-mob.webp) bisque 62% center no-repeat; }
+
+@media (min-width: 768px) {
+
+  .webp .banner { background: url(../images/banner/helimain.webp) bisque 61% center no-repeat; }
+}
