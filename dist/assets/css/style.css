@@ -509,8 +509,9 @@ li {
 .banner {
   background-color: bisque;
   color: white;
+  height: 655px;
   background: url(./../images/banner/helimain-mob.jpg) bisque 62% center no-repeat;
-  padding: 142px 0 154px;
+  padding-top: 142px;
 }
 
 .banner__text {
@@ -583,6 +584,14 @@ li {
 
   .header__contact-tel {
     display: inline;
+  }
+
+  .banner {
+    padding-top: 151px;
+  }
+
+  .banner__text {
+    margin-bottom: 35px;
   }
 }
 

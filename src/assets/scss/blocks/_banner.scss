@@ -1,45 +1,61 @@
-.banner{
+.banner {
     background-color: bisque;
-    color:white;
+    color: white;
+    height: 655px;
     background: url(./../images/banner/helimain-mob.jpg) bisque 62% center no-repeat;
-    padding: 142px 0 154px;
-    &__text{
-       font-size: 3.2rem;
-       line-height: 3.9rem;
-       width: 264px;
-       margin-bottom: 34px;
-       &_accent{
-           color: $colorAccent;
-       }
+    padding-top: 142px;
+
+    @media (min-width: 576px) {
+        padding-top: 151px;
     }
-    &__praice-tag{
+
+    &__text {
+        font-size: 3.2rem;
+        line-height: 3.9rem;
+        width: 264px;
+        margin-bottom: 34px;
+
+        @media (min-width: 576px) {
+            margin-bottom: 35px;
+        }
+
+        &_accent {
+            color: $colorAccent;
+        }
+    }
+
+    &__praice-tag {
         font-size: 1.8rem;
         line-height: 0.7rem;
         display: flex;
         width: 200px;
         height: 86px;
         padding: 16px 15px 23px 17px;
-        background-color:$colorAccent;
+        background-color: $colorAccent;
         background: url(./../images/banner/tag.svg) no-repeat;
         background-size: 100%;
         margin-bottom: 14px;
     }
-    &__price{
+
+    &__price {
         font-size: 3rem;
         line-height: 5.5rem;
         font-weight: 800;
     }
-    &__img-proc{
+
+    &__img-proc {
         width: 47px;
         height: 47px;
     }
-    &__btn{
+
+    &__btn {
         width: 275px;
         height: 68px;
         border: 3px solid #FFFFFF;
         border-radius: 7px;
     }
-    &__btn-link{
+
+    &__btn-link {
         font-weight: 900;
         letter-spacing: 0.1rem;
         display: block;
@@ -49,5 +65,3 @@
         padding: 23px 0;
     }
 }
-
-
