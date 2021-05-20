@@ -566,6 +566,7 @@ li {
   border: 3px solid #FC9B09;
   color: #FC9B09;
   background: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
 }
 
 .banner__btn-link {
@@ -576,6 +577,43 @@ li {
   height: 100%;
   text-align: center;
   padding: 23px 0;
+}
+
+.services__title {
+  font-weight: 400;
+  text-align: center;
+  margin: 39px 0 13px;
+}
+
+.services__image {
+  width: 290px;
+  height: 197px;
+  margin-bottom: 30px;
+}
+
+.services__image img {
+  width: 100%;
+}
+
+.services__text {
+  line-height: 2rem;
+  margin-bottom: 24px;
+}
+
+.services__item {
+  height: 52px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.services__item img {
+  margin-right: 11px;
+}
+
+.services__item p {
+  padding-top: 8px;
+  line-height: 2rem;
 }
 
 @media (min-width: 576px) {
