@@ -839,6 +839,11 @@ li {
   .services__text {
     margin-top: -7px;
   }
+
+  .services__reviews {
+    margin-top: 3px;
+    width: 50%;
+  }
 }
 
 @media (min-width: 1440px) {

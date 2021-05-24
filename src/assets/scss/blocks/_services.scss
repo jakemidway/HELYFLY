@@ -86,6 +86,10 @@
             align-items: center;
             font-size: 1.8rem;
         }
+        @media (min-width: 1280px) {
+            margin-top: 3px;
+            width: 50%;
+        }
         &::after{
             position: absolute;
             left: 0;
