@@ -660,6 +660,15 @@ li {
   margin-bottom: 7px;
 }
 
+.gallery__title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 32px;
+  text-align: center;
+}
+
 @media (min-width: 576px) {
   .container {
     width: 576px;
