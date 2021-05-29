@@ -31,3 +31,39 @@ for (let anchor of anchors) {
         })
     });
 }
+
+
+// slider for gallery
+let countSlider = 0;
+
+const btnSlidePrev = document.querySelector('#Btn-slide-prev');
+const btnSlideNext = document.querySelector('#Btn-slide-next');
+
+let slider = document.querySelector('.gallery__slider');
+let slides = document.getElementsByClassName('gallery__slide');
+let widthSlide = slides[0].offsetWidth;
+let widthSlider =  widthSlide * slides.length;
+slider.style.width = widthSlider + 'px';
+console.log(slider)
+
+
+
+
+
+function visibelSlide(countSlider){
+    // sliders[countSlider].style.display="block";
+}
+btnSlideNext.onclick = function(countSlider){
+   
+}
+btnSlidePrev.onclick = function(){
+    
+}
+
+visibelSlide(countSlider);
+
+
+
+
+
+
