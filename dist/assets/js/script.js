@@ -50,9 +50,15 @@ let slider = document.querySelector('.gallery__slider');
 let slides = document.getElementsByClassName('gallery__slide');
 let widthSlide = slides[0].offsetWidth;
 let widthSlider = widthSlide * slides.length + (15 * (slides.length - 1));
+
+
+
 let positionSliderX = 0;
 slider.style.width = widthSlider + 'px';
 
+
+console.log(widthSlider);
+console.log(slides.length);
 console.log('длинна слайдера с отступамми ' + widthSlider);
 
 function visibelSlide(countSlider) {
@@ -62,8 +68,7 @@ btnSlideNext.onclick = function (countSlider) {
 
     if (-positionSliderX + container.offsetWidth < widthSlider) {
         positionSliderX = positionSliderX - Math.round(widthSlider / slides.length);
-        slider.style.transform = 'translate(' + positionSliderX + 'px)';
-        
+        slider.style.transform = 'translate(' + positionSliderX + 'px)';     
     }
     console.log( 'длинна слайдер линии ' + widthSlider);
     console.log( 'посишон по иксу левого края ' + positionSliderX);
