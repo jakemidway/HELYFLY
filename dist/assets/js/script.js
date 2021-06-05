@@ -39,31 +39,47 @@ let countSlider = 0;
 const btnSlidePrev = document.querySelector('#Btn-slide-prev');
 const btnSlideNext = document.querySelector('#Btn-slide-next');
 
+let container = document.querySelector('.container');
+
+console.log(container.offsetWidth);
+
+
+
+
 let slider = document.querySelector('.gallery__slider');
 let slides = document.getElementsByClassName('gallery__slide');
 let widthSlide = slides[0].offsetWidth;
-let widthSlider =  widthSlide * slides.length;
+let widthSlider = widthSlide * slides.length + (15 * (slides.length - 1));
+let positionSliderX = 0;
 slider.style.width = widthSlider + 'px';
-console.log(slider)
 
+console.log('длинна слайдера с отступамми ' + widthSlider);
 
-
-
-
-function visibelSlide(countSlider){
+function visibelSlide(countSlider) {
     // sliders[countSlider].style.display="block";
 }
-btnSlideNext.onclick = function(countSlider){
-   
+btnSlideNext.onclick = function (countSlider) {
+
+    if (-positionSliderX + container.offsetWidth < widthSlider) {
+        positionSliderX = positionSliderX - Math.round(widthSlider / slides.length);
+        slider.style.transform = 'translate(' + positionSliderX + 'px)';
+        
+    }
+    console.log( 'длинна слайдер линии ' + widthSlider);
+    console.log( 'посишон по иксу левого края ' + positionSliderX);
+    console.log( 'ширина контайнера ' + container.offsetWidth);
 }
-btnSlidePrev.onclick = function(){
+
+
+btnSlidePrev.onclick = function () {
+
+    if (positionSliderX < 0) {
+        positionSliderX = positionSliderX + Math.round(widthSlider / slides.length);
+        slider.style.transform = 'translate(' + positionSliderX + 'px)';
+        
+    }
     
+    console.log( 'посишон по иксу левого края ' + positionSliderX);
 }
 
 visibelSlide(countSlider);
-
-
-
-
-
-
