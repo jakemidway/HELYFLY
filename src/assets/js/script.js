@@ -88,3 +88,12 @@ btnSlidePrev.onclick = function () {
 }
 
 visibelSlide(countSlider);
+
+
+// кнопка Показать все фото
+
+const btnShowFoto = document.querySelector('.gallery__btn-show');
+
+btnShowFoto.onclick = function () {
+ console.log('ok');
+}

@@ -68,7 +68,6 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 10px;
-
         @media (max-width: 767px) {
             display: none;
         }
@@ -78,7 +77,9 @@
         width: 277px;
         height: 185px;
         border: 1px solid red;
-
+        &_hidden{
+            display: none;
+        }
         &:nth-child(2n+1) {
             justify-self: end;
         }
