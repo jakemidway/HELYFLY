@@ -2,7 +2,7 @@
     position: relative;
     height: 377px;
     overflow: hidden;
-    padding-bottom: 27px;
+    padding-bottom: 90px;
     
     @media (min-width: 768px) {
         height: auto;
@@ -63,6 +63,7 @@
     }
 
     &__grid {
+        position: relative;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 10px;
@@ -88,41 +89,17 @@
     }
 
     &__btn-show {
-        position: relative;
+        position: absolute;       
         color: #5286EC;
-        grid-column-start: 1;
-        grid-column-end: 3;
         border: none;
         background: inherit;
-        margin-top: 45px;
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 500;
         font-size: 17px;
-        height: 17px;
-        @media (min-width: 1280px) {  
-            grid-column-end: 5;
-        }
-        &::after {
-            display: block;
-            position: absolute;
-            top: 6px;
-            left: 35%;
-            content: ' ';
-            background: url(./../images/gallery/Arrow.svg) no-repeat;
-            height: 100%;
-            width: 11px;
-        }
-
-        &::before {
-            display: block;
-            position: absolute;
-            right: 35%;
-            top: 6px;
-            content: ' ';
-            background: url(./../images/gallery/Arrow.svg) no-repeat;
-            height: 100%;
-            width: 11px;
-        }
+        height: 17px;       
+    }
+    &__arr{
+        transition: 0.2s all;
     }
 }
