@@ -94,6 +94,13 @@ visibelSlide(countSlider);
 
 const btnShowFoto = document.querySelector('.gallery__btn-show');
 
+let gridItems = document.querySelectorAll('.gallery__item-grid');
+let gridItemsHidden = document.querySelectorAll('.gallery__item-grid_hidden');
+
+
+
 btnShowFoto.onclick = function () {
- console.log('ok');
+    for (let item of gridItemsHidden){
+        item.classList.toggle('gallery__item-grid_hidden')
+    }
 }

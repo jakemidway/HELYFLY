@@ -694,13 +694,11 @@ li {
   -webkit-transition: 0.2s all;
   -o-transition: 0.2s all;
   transition: 0.2s all;
-  border: 1px solid blue;
 }
 
 .gallery__slide {
   height: 185px;
   width: 277px;
-  border: 1px dotted red;
 }
 
 .gallery__slider-control {
@@ -726,7 +724,6 @@ li {
 .gallery__item-grid {
   width: 277px;
   height: 185px;
-  border: 1px solid red;
 }
 
 .gallery__item-grid_hidden {
@@ -976,6 +973,14 @@ li {
   .services__reviews {
     margin-top: 3px;
     width: 50%;
+  }
+
+  .gallery__grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .gallery__btn-show {
+    grid-column-end: 5;
   }
 }
 
