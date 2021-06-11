@@ -745,6 +745,11 @@ li {
   font-weight: 500;
   font-size: 17px;
   height: 17px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 40px;
 }
 
 .gallery__arr {
@@ -976,6 +981,10 @@ li {
 
 @media (max-width: 767px) {
   .gallery__grid {
+    display: none;
+  }
+
+  .gallery__btn-show {
     display: none;
   }
 }

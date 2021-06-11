@@ -97,7 +97,13 @@
         font-style: normal;
         font-weight: 500;
         font-size: 17px;
-        height: 17px;       
+        height: 17px;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 40px;
+        @media (max-width: 767px) {
+            display: none;
+        }       
     }
     &__arr{
         transition: 0.2s all;
