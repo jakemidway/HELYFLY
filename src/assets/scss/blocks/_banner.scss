@@ -131,7 +131,11 @@
         height: 100%;
         text-align: center;
         padding: 23px 0;
-
+        color: #fff;
+        transition: .5s ease;
+        &:hover{
+            color: $colorAccent;
+        }
         @media (min-width: 768px) {
             letter-spacing: 0;
         }

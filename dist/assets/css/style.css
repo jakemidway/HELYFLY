@@ -587,6 +587,14 @@ li {
   height: 100%;
   text-align: center;
   padding: 23px 0;
+  color: #fff;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.banner__btn-link:hover {
+  color: #FC9B09;
 }
 
 .services {
