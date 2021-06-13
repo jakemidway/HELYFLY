@@ -40,16 +40,23 @@ body {
 }
 a{
     text-decoration: none;
+    color: $colorLinks;
 }
 li {
     list-style: none;       
 }
 
 
+
+
 //blocks
+@import "./blocks/btn-show-more";
+
+//blocksSection
 @import "./blocks/header";
 @import "./blocks/banner";
 @import "./blocks/services";
 @import "./blocks/gallery";
+@import "./blocks/about";
 
 

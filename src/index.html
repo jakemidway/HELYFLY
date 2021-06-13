@@ -107,7 +107,8 @@
             <div class="gallery__grid">
                 @@include('_gallery__item-grid.html')
             </div>
-            <button class="gallery__btn-show"><img class="gallery__arr" src="./assets/images/gallery/Arrow.svg"> Показать все фото <img class="gallery__arr" src="./assets/images/gallery/Arrow.svg"></button>
+            <button class="gallery__btn-show btn-show-more"><img class="gallery__arr" src="./assets/images/Arrow.svg">
+                Показать все фото <img class="gallery__arr" src="./assets/images/Arrow.svg"></button>
         </div>
         <div class="gallery__slider-control">
             <button id="Btn-slide-prev">prev</button>
@@ -115,7 +116,47 @@
         </div>
     </section>
 
-    
+    <section class="about">
+        <div class="container">
+            <div class="about__avtor">
+                <div class="about__avat">
+                    <img src="./assets/images/about/avat.png" alt="avat">
+                </div>
+                <div class="about__name">Марина Иванова</div>
+                <div class="about__position">Фотограф</div>
+                <a class="about__link" href="#">Показать больше<br>информации о фотографе</a>
+            </div>
+            <div class="about__content">
+                <h3 class="about__title">Об организаторе:</h3>
+                <p>Всем привет! Я фотограф Мария! И по мимо фотосъемки я так же являюсь членом группы экспертов
+                    туристической отрасли, которые хорошо разбираются
+                    в маркетинге, операциях
+                    и услугах обслуживания клиентов, специализирующихся
+                    на совместном использовании
+                    и частных турах.</p>
+                    
+                <p>Сначала мы (я и моя команда) изучаем интересы клиентов, а затем придумываем подходящее решение,
+                    которое соответствует бюджету и планам клиента.
+                    Мы никогда не зависим
+                    от субпоставщиков
+                    и не свяжемся…</p>
+                <button class="btn-show-more about__btn-show">Читать еще <img class="gallery__arr" src="./assets/images/Arrow.svg"></button>
+            </div>
+            <div class="about__content">
+                <h3 class="about__title">Что я предоставлю:</h3>
+                <p>Встречу вас на машине после длительного перелёта.
+                    Качественный подбор места 
+                    и локации для вашей съемки.
+                    При необходимости всегда возможно прерваться 
+                    на обед/ужин.
+                    Более 50 фотографий на выходе 
+                    с обработкой и замечательные впечатления о Дубае!</p>
+                <button class="btn-show-more about__btn-show">Читать еще <img class="gallery__arr" src="./assets/images/Arrow.svg"></button>
+            </div>
+        </div>
+    </section>
+
+
 
     <script src="./assets/js/script.js"></script>
 </body>

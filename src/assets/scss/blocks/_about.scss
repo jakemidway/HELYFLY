@@ -1,0 +1,44 @@
+.about {
+
+    &__avtor{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    &__avat{
+        margin-bottom: 23px;
+        
+    }
+    &__name{
+        font-size: 1.8rem;
+        line-height: 2.19rem;
+        margin-bottom: 7px;
+        font-weight: 500;
+    }
+    &__position{
+        font-size: 1.4rem;
+        line-height: 2.19rem;
+        margin-bottom: 7px;
+    }
+    &__link{
+        font-size: 1.4rem;
+        line-height: 2.19rem;
+        margin-bottom: 27px;
+        font-weight: 500;
+    }
+    &__content{
+        p{
+            margin-bottom: 22px;
+            line-height: 2.4rem;
+        }
+    }
+    &__title{
+        font-size: 1.8rem;
+        font-weight: 500;
+        margin-bottom: 14px;
+    }
+    &__btn-show{
+        margin-bottom: 30px;
+    }
+}
