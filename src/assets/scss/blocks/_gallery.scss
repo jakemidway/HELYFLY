@@ -1,11 +1,14 @@
 .gallery {
     position: relative;
-    height: 377px;
+    height: 343px;
     overflow: hidden;
-    padding-bottom: 90px;
     
+    @media (min-width: 576px) {
+        height: 383px;
+    }
     @media (min-width: 768px) {
         height: auto;
+        padding-bottom: 94px;
     }
 
     &__title {
@@ -23,6 +26,15 @@
             margin: 0 0 30px;
             width: 100%;
             text-align: left;
+        }
+        @media (min-width: 1280px) {
+            font-weight: 500;
+            font-size: 2.8rem;
+            margin-bottom: 40px;
+        }
+        @media (min-width: 1440px) {
+            font-size: 2rem;
+            margin-bottom: 33px;
         }
     }
 
@@ -93,12 +105,23 @@
         height: 17px;
         left: 50%;
         transform: translateX(-50%);
-        bottom: 40px;
+        bottom: 32px;
+        font-size: 1.7rem;
+        span{
+            padding: 0 5px;
+        }
         @media (max-width: 767px) {
             display: none;
         }       
     }
     &__arr{
         transition: 0.2s all;
+    }
+    &__hr{
+        position: relative;
+        top: 90px;
+        background-color: #C7C7C7;
+        width: 100%;
+        height: 1px;
     }
 }

@@ -590,7 +590,7 @@ li {
 }
 
 .services {
-  padding: 39px 0 60px;
+  padding: 39px 0 55px;
 }
 
 .services__wrapper {
@@ -672,9 +672,8 @@ li {
 
 .gallery {
   position: relative;
-  height: 377px;
+  height: 343px;
   overflow: hidden;
-  padding-bottom: 90px;
 }
 
 .gallery__title {
@@ -752,7 +751,12 @@ li {
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
-  bottom: 40px;
+  bottom: 32px;
+  font-size: 1.7rem;
+}
+
+.gallery__btn-show span {
+  padding: 0 5px;
 }
 
 .gallery__arr {
@@ -761,7 +765,20 @@ li {
   transition: 0.2s all;
 }
 
+.gallery__hr {
+  position: relative;
+  top: 90px;
+  background-color: #C7C7C7;
+  width: 100%;
+  height: 1px;
+}
+
+.about {
+  margin-bottom: 21px;
+}
+
 .about__avtor {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -776,7 +793,12 @@ li {
 }
 
 .about__avat {
-  margin-bottom: 23px;
+  margin-bottom: 21px;
+}
+
+.about__heart {
+  position: absolute;
+  right: 0;
 }
 
 .about__name {
@@ -795,13 +817,18 @@ li {
 .about__link {
   font-size: 1.4rem;
   line-height: 2.19rem;
-  margin-bottom: 27px;
+  margin-bottom: 23px;
   font-weight: 500;
 }
 
 .about__content p {
-  margin-bottom: 22px;
-  line-height: 2.4rem;
+  margin-bottom: 8px;
+  line-height: 24.18px;
+  font-size: 1.6rem;
+}
+
+.about__content p:nth-child(2) {
+  margin-bottom: 50px;
 }
 
 .about__title {
@@ -812,6 +839,13 @@ li {
 
 .about__btn-show {
   margin-bottom: 30px;
+}
+
+.about__hr {
+  margin-top: 43px;
+  background-color: #C7C7C7;
+  width: 100%;
+  height: 1px;
 }
 
 @media (min-width: 576px) {
@@ -866,11 +900,25 @@ li {
     margin-bottom: 0;
     margin-right: 14px;
   }
+
+  .gallery {
+    height: 383px;
+  }
+
+  .about__avtor {
+    margin-bottom: 10px;
+  }
 }
 
 @media (min-width: 577px) {
   .banner {
     background: url(../images/banner/helimain.jpg) 55% 50%/auto 100% no-repeat;
+  }
+}
+
+@media (min-width: 578px) {
+  .about__btn-show {
+    margin-bottom: 40px;
   }
 }
 
@@ -958,6 +1006,7 @@ li {
 
   .gallery {
     height: auto;
+    padding-bottom: 94px;
   }
 
   .gallery__title {
@@ -973,6 +1022,10 @@ li {
 
   .gallery__slider-control {
     display: none;
+  }
+
+  .about__avtor {
+    padding-top: 52px;
   }
 }
 
@@ -992,6 +1045,7 @@ li {
 
   .services {
     padding-top: 72px;
+    padding-bottom: 73px;
   }
 
   .services__wrapper {
@@ -1018,14 +1072,54 @@ li {
     width: 50%;
   }
 
+  .gallery__title {
+    font-weight: 500;
+    font-size: 2.8rem;
+    margin-bottom: 40px;
+  }
+
   .gallery__grid {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .about__avtor {
+    width: 45%;
+    padding-top: 66px;
+  }
+
+  .about__flex-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+
+  .about__heart {
+    right: 113px;
+    top: 52px;
+  }
+
+  .about__content {
+    width: 55%;
+    padding-top: 36px;
   }
 }
 
 @media (min-width: 1440px) {
   .banner {
     background: url(../images/banner/helimain.webp) 49% 100%/auto 100% no-repeat;
+  }
+
+  .services {
+    padding-bottom: 27px;
+  }
+
+  .gallery__title {
+    font-size: 2rem;
+    margin-bottom: 33px;
   }
 }
 
