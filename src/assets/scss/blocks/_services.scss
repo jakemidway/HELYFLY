@@ -82,6 +82,17 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        &::after{
+            position: absolute;
+            left: 48px;
+            bottom: -20px;
+            display: block;
+            content:'';
+            width: 120px;
+            height: 41px;
+            background-image: url(./../images/services/5stars.png);
+            background-repeat: no-repeat;
+        }
         @media (min-width: 576px) {
             margin-top: 18px;
             padding: 32px 0 32px 43px;
@@ -94,7 +105,7 @@
             margin-top: 3px;
             width: 50%;
         }
-        &::after{
+        &::before{
             position: absolute;
             left: 0;
             top: 14px;

@@ -500,9 +500,11 @@ li {
   height: 16px;
 }
 
-.header__user img {
+.header__user {
   width: 20px;
   height: 20px;
+  background-image: url(./../images/header/user-ico.svg);
+  background-repeat: no-repeat;
 }
 
 .header__contact-tel {
@@ -560,6 +562,7 @@ li {
 .banner__img-proc {
   width: 47px;
   height: 47px;
+  background: url(./../images/banner/procent.svg) no-repeat;
 }
 
 .banner__btn {
@@ -663,6 +666,18 @@ li {
 }
 
 .services__reviews::after {
+  position: absolute;
+  left: 48px;
+  bottom: -20px;
+  display: block;
+  content: '';
+  width: 120px;
+  height: 41px;
+  background-image: url(./../images/services/5stars.png);
+  background-repeat: no-repeat;
+}
+
+.services__reviews::before {
   position: absolute;
   left: 0;
   top: 14px;
@@ -1148,6 +1163,8 @@ li {
 }
 
 .webp .banner { background: url(./../images/banner/helimain-mob.webp) 62% center no-repeat; }
+
+.webp .services__reviews::after { background-image: url(./../images/services/5stars.webp); }
 
 @media (min-width: 577px) {
 
