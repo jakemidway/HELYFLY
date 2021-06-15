@@ -636,6 +636,23 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-left: 46px;
+}
+
+.services__item:nth-child(1) {
+  background: url(./../images/services/clock.svg) no-repeat;
+}
+
+.services__item:nth-child(2) {
+  background: url(./../images/services/camera.svg) no-repeat;
+}
+
+.services__item:nth-child(3) {
+  background: url(./../images/services/gps-ico.svg) no-repeat;
+}
+
+.services__item:nth-child(4) {
+  background: url(./../images/services/speech-ico.svg) no-repeat;
 }
 
 .services__item img {

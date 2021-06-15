@@ -64,7 +64,20 @@
     }
     &__item{
         height: 48px;
-        display: flex;   
+        display: flex;
+        padding-left: 46px;
+        &:nth-child(1){
+            background: url(./../images/services/clock.svg) no-repeat;
+        }
+        &:nth-child(2){
+            background: url(./../images/services/camera.svg) no-repeat;
+        }
+        &:nth-child(3){
+            background: url(./../images/services/gps-ico.svg) no-repeat;
+        }
+        &:nth-child(4){
+            background: url(./../images/services/speech-ico.svg) no-repeat;
+        }
         img{
             margin-right: 11px;
         }
