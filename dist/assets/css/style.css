@@ -470,7 +470,6 @@ li {
 .reviews {
   position: relative;
   border-top: 1px solid #C7C7C7;
-  border-bottom: 1px solid #C7C7C7;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -495,8 +494,6 @@ li {
 
 .reviews::before {
   position: absolute;
-  left: 0;
-  top: 14px;
   display: block;
   content: '';
   width: 41px;
@@ -709,11 +706,17 @@ li {
 .services__reviews {
   margin-top: 38px;
   padding: 14px 0 30px 48px;
+  border-bottom: 1px solid #C7C7C7;
 }
 
 .services__reviews::after {
   left: 48px;
   bottom: -11px;
+}
+
+.services__reviews::before {
+  left: 0;
+  top: 14px;
 }
 
 .gallery {
@@ -960,31 +963,25 @@ li {
 }
 
 .free-time__reviews {
-  padding: 31px 0 30px 69px;
+  padding: 31px 0 42px 69px;
   font-size: 1.3rem;
   line-height: 1.9rem;
+}
+
+.free-time__reviews::after {
+  left: 68px;
+  bottom: 5px;
+}
+
+.free-time__reviews::before {
+  left: 18px;
+  top: 31px;
 }
 
 @media (min-width: 576px) {
   .container {
     width: 576px;
     padding: 0 35px;
-  }
-
-  .reviews {
-    margin-top: 18px;
-    padding: 32px 0 32px 43px;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    font-size: 1.8rem;
   }
 
   .reviews__text-reviews {
@@ -1016,6 +1013,22 @@ li {
     font-size: 1.8rem;
     line-height: 2.7rem;
     margin-bottom: 15px;
+  }
+
+  .services__reviews {
+    margin-top: 18px;
+    padding: 32px 0 32px 43px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 1.8rem;
   }
 
   .gallery {
@@ -1157,11 +1170,6 @@ li {
     padding: 0 70px;
   }
 
-  .reviews {
-    margin-top: 3px;
-    width: 50%;
-  }
-
   .header__user {
     display: none;
   }
@@ -1192,6 +1200,11 @@ li {
 
   .services__text {
     margin-top: -7px;
+  }
+
+  .services__reviews {
+    margin-top: 3px;
+    width: 50%;
   }
 
   .gallery__title {

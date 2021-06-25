@@ -7,7 +7,7 @@
         line-height: 32px;
         text-align: center;
         margin-bottom: 41px;
-        
+
     }
 
     &__table {
@@ -15,11 +15,13 @@
         font-size: 1.8rem;
         line-height: 2.633rem;
     }
-    &__date{
+
+    &__date {
         font-weight: 500;
         padding: 16px 0 16px;
         text-align: center;
     }
+
     &__window {
         border-top: 0.5px solid #C7C7C7;
         padding: 28px 20px;
@@ -30,7 +32,7 @@
         }
     }
 
-    &__price{
+    &__price {
         font-weight: 600;
         line-height: 2.194rem;
     }
@@ -46,19 +48,32 @@
         line-height: 1.7rem;
         font-weight: 500;
         transition: .2s ease;
-        &:hover{
+
+        &:hover {
             background-color: $colorAccent;
             color: #fff;
         }
-        &:active{
+
+        &:active {
             border-color: $colorAccentDark;
             background-color: $colorAccentDark;
             color: #fff;
-        }   
+        }
     }
-    &__reviews{
-        padding: 31px 0 30px 69px;
+
+    &__reviews {
+        padding: 31px 0 42px 69px;
         font-size: 1.3rem;
         line-height: 1.9rem;
+
+        &::after {
+            left: 68px;
+            bottom: 5px;
+        }
+
+        &::before {
+            left: 18px;
+            top: 31px;
+        }
     }
 }
