@@ -467,6 +467,48 @@ li {
   font-weight: 500;
 }
 
+.reviews {
+  position: relative;
+  border-top: 1px solid #C7C7C7;
+  border-bottom: 1px solid #C7C7C7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.reviews::after {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 120px;
+  height: 41px;
+  background-image: url(./../images/services/5stars.png);
+  background-repeat: no-repeat;
+}
+
+.reviews::before {
+  position: absolute;
+  left: 0;
+  top: 14px;
+  display: block;
+  content: '';
+  width: 41px;
+  height: 41px;
+  background-image: url(./../images/services/cup.svg);
+  background-repeat: no-repeat;
+}
+
+.reviews__text-reviews {
+  margin-bottom: 7px;
+}
+
 .header {
   padding: 20px 0 17px;
   font-size: 1.4rem;
@@ -535,7 +577,7 @@ li {
 }
 
 .banner__text_accent {
-  color: #FC9B09;
+  color: #fd9b08;
 }
 
 .banner__praice-tag {
@@ -547,7 +589,7 @@ li {
   width: 200px;
   height: 86px;
   padding: 16px 15px 23px 17px;
-  background-color: #FC9B09;
+  background-color: #fd9b08;
   background: url(./../images/banner/tag.svg) no-repeat;
   background-size: 100%;
   margin-bottom: 14px;
@@ -576,8 +618,8 @@ li {
 }
 
 .banner__btn:hover {
-  border: 3px solid #FC9B09;
-  color: #FC9B09;
+  border: 3px solid #fd9b08;
+  color: #fd9b08;
   background: rgba(255, 255, 255, 0.7);
   cursor: pointer;
 }
@@ -597,11 +639,11 @@ li {
 }
 
 .banner__btn-link:hover {
-  color: #FC9B09;
+  color: #fd9b08;
 }
 
 .services {
-  padding: 39px 0 55px;
+  padding: 39px 0 60px;
 }
 
 .services__wrapper {
@@ -665,54 +707,18 @@ li {
 }
 
 .services__reviews {
-  position: relative;
   margin-top: 38px;
-  border-top: 1px solid #C7C7C7;
-  border-bottom: 1px solid #C7C7C7;
-  padding: 14px 0 14px 48px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  padding: 14px 0 30px 48px;
 }
 
 .services__reviews::after {
-  position: absolute;
   left: 48px;
-  bottom: -20px;
-  display: block;
-  content: '';
-  width: 120px;
-  height: 41px;
-  background-image: url(./../images/services/5stars.png);
-  background-repeat: no-repeat;
-}
-
-.services__reviews::before {
-  position: absolute;
-  left: 0;
-  top: 14px;
-  display: block;
-  content: '';
-  width: 41px;
-  height: 41px;
-  background-image: url(./../images/services/cup.svg);
-  background-repeat: no-repeat;
-}
-
-.services__text-reviews {
-  margin-bottom: 7px;
+  bottom: -11px;
 }
 
 .gallery {
   position: relative;
-  height: 343px;
+  height: 334px;
   overflow: hidden;
 }
 
@@ -724,7 +730,7 @@ li {
   line-height: 32px;
   text-align: center;
   width: 170px;
-  margin: 0 auto 32px;
+  margin: 0 auto 35px;
 }
 
 .gallery__slider {
@@ -814,6 +820,7 @@ li {
 }
 
 .about {
+  padding-top: 13px;
   margin-bottom: 21px;
 }
 
@@ -838,6 +845,7 @@ li {
 
 .about__heart {
   position: absolute;
+  top: -13px;
   right: 0;
 }
 
@@ -907,13 +915,13 @@ li {
 
 .free-time__date {
   font-weight: 500;
-  padding: 20px 0 16px;
+  padding: 16px 0 16px;
   text-align: center;
 }
 
 .free-time__window {
   border-top: 0.5px solid #C7C7C7;
-  padding: 30px 20px;
+  padding: 28px 20px;
 }
 
 .free-time__window div {
@@ -926,28 +934,62 @@ li {
 }
 
 .free-time__btn {
-  color: #FC9B09;
+  margin-top: 9px;
+  color: #fd9b08;
   background-color: #fff;
-  border: 2px solid #FC9B09;
+  border: 2px solid #fd9b08;
   border-radius: 3px;
-  padding: 16px 32px;
+  padding: 15px 30px;
   font-size: 1.4rem;
   line-height: 1.7rem;
   font-weight: 500;
-  -webkit-transition: .5s ease;
-  -o-transition: .5s ease;
-  transition: .5s ease;
+  -webkit-transition: .2s ease;
+  -o-transition: .2s ease;
+  transition: .2s ease;
 }
 
 .free-time__btn:hover {
-  background-color: #FC9B09;
+  background-color: #fd9b08;
   color: #fff;
+}
+
+.free-time__btn:active {
+  border-color: #cf7d02;
+  background-color: #cf7d02;
+  color: #fff;
+}
+
+.free-time__reviews {
+  padding: 31px 0 30px 69px;
+  font-size: 1.3rem;
+  line-height: 1.9rem;
 }
 
 @media (min-width: 576px) {
   .container {
     width: 576px;
     padding: 0 35px;
+  }
+
+  .reviews {
+    margin-top: 18px;
+    padding: 32px 0 32px 43px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 1.8rem;
+  }
+
+  .reviews__text-reviews {
+    margin-bottom: 0;
+    margin-right: 14px;
   }
 
   .header__logo {
@@ -974,27 +1016,6 @@ li {
     font-size: 1.8rem;
     line-height: 2.7rem;
     margin-bottom: 15px;
-  }
-
-  .services__reviews {
-    margin-top: 18px;
-    padding: 32px 0 32px 43px;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    font-size: 1.8rem;
-  }
-
-  .services__text-reviews {
-    margin-bottom: 0;
-    margin-right: 14px;
   }
 
   .gallery {
@@ -1136,6 +1157,11 @@ li {
     padding: 0 70px;
   }
 
+  .reviews {
+    margin-top: 3px;
+    width: 50%;
+  }
+
   .header__user {
     display: none;
   }
@@ -1166,11 +1192,6 @@ li {
 
   .services__text {
     margin-top: -7px;
-  }
-
-  .services__reviews {
-    margin-top: 3px;
-    width: 50%;
   }
 
   .gallery__title {
@@ -1240,9 +1261,9 @@ li {
   }
 }
 
-.webp .banner { background: url(./../images/banner/helimain-mob.webp) 62% center no-repeat; }
+.webp .reviews::after { background-image: url(./../images/services/5stars.webp); }
 
-.webp .services__reviews::after { background-image: url(./../images/services/5stars.webp); }
+.webp .banner { background: url(./../images/banner/helimain-mob.webp) 62% center no-repeat; }
 
 @media (min-width: 577px) {
 

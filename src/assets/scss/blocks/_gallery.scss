@@ -1,6 +1,6 @@
 .gallery {
     position: relative;
-    height: 343px;
+    height: 334px;
     overflow: hidden;
     
     @media (min-width: 576px) {
@@ -19,7 +19,7 @@
         line-height: 32px;
         text-align: center;
         width: 170px;
-        margin: 0 auto 32px;
+        margin: 0 auto 35px;
 
         @media (min-width: 768px) {
             font-size: 2rem;

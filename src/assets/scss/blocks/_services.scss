@@ -1,5 +1,5 @@
 .services{
-    padding: 39px 0 55px;
+    padding: 39px 0 60px;
     @media (min-width: 768px) {
         padding-top: 52px;
     }
@@ -87,54 +87,13 @@
         }
     }
     &__reviews{
-        position: relative;
         margin-top: 38px;
-        border-top: 1px solid #C7C7C7;
-        border-bottom: 1px solid #C7C7C7;
-        padding: 14px 0 14px 48px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        padding: 14px 0 30px 48px;
         &::after{
-            position: absolute;
             left: 48px;
-            bottom: -20px;
-            display: block;
-            content:'';
-            width: 120px;
-            height: 41px;
-            background-image: url(./../images/services/5stars.png);
-            background-repeat: no-repeat;
-        }
-        @media (min-width: 576px) {
-            margin-top: 18px;
-            padding: 32px 0 32px 43px;
-            flex-direction: row;
-            justify-content: flex-start;
-            align-items: center;
-            font-size: 1.8rem;
-        }
-        @media (min-width: 1280px) {
-            margin-top: 3px;
-            width: 50%;
-        }
-        &::before{
-            position: absolute;
-            left: 0;
-            top: 14px;
-            display: block;
-            content:'';
-            width: 41px;
-            height: 41px;
-            background-image: url(./../images/services/cup.svg);
-            background-repeat: no-repeat;
+            bottom: -11px; 
         }
     }
-    &__text-reviews{
-        margin-bottom: 7px;
-        @media (min-width: 576px) {
-            margin-bottom: 0;
-            margin-right: 14px;
-        }
-    }
+    
+    
 }

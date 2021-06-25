@@ -1,0 +1,48 @@
+.reviews{
+    position: relative;
+    border-top: 1px solid #C7C7C7;
+    border-bottom: 1px solid #C7C7C7;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &::after{
+        position: absolute;
+        display: block;
+        content:'';
+        width: 120px;
+        height: 41px;
+        background-image: url(./../images/services/5stars.png);
+        background-repeat: no-repeat;
+    }
+    @media (min-width: 576px) {
+        margin-top: 18px;
+        padding: 32px 0 32px 43px;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 1.8rem;
+    }
+    @media (min-width: 1280px) {
+        margin-top: 3px;
+        width: 50%;
+    }
+    &::before{
+        position: absolute;
+        left: 0;
+        top: 14px;
+        display: block;
+        content:'';
+        width: 41px;
+        height: 41px;
+        background-image: url(./../images/services/cup.svg);
+        background-repeat: no-repeat;
+    }
+    &__text-reviews{
+        margin-bottom: 7px;
+        @media (min-width: 576px) {
+            margin-bottom: 0;
+            margin-right: 14px;
+        }
+    }
+}
