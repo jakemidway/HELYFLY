@@ -1,3 +1,52 @@
-.free-time{
-    
+.free-time {
+    &__title {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 2.6rem;
+        line-height: 32px;
+        text-align: center;
+        margin-bottom: 41px;
+    }
+
+    &__table {
+        border: 1px solid #C7C7C7;
+        font-size: 1.8rem;
+        line-height: 2.633rem;
+    }
+    &__date{
+        font-weight: 500;
+        padding: 20px 0 16px;
+        text-align: center;
+    }
+    &__window {
+        border-top: 0.5px solid #C7C7C7;
+        padding: 30px 20px;
+
+
+        & div {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__price{
+        font-weight: 600;
+        line-height: 2.194rem;
+    }
+
+    &__btn {
+        color: $colorAccent;
+        background-color: #fff;
+        border: 2px solid $colorAccent;
+        border-radius: 3px;
+        padding: 16px 32px;
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+        font-weight: 500;
+        transition: .5s ease;
+        &:hover{
+            background-color: $colorAccent;
+            color: #fff;
+        }
+    }
 }
