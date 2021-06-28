@@ -4,10 +4,12 @@
         font-style: normal;
         font-weight: normal;
         font-size: 2.6rem;
-        line-height: 32px;
+        line-height: 3.2rem;
         text-align: center;
-        margin-bottom: 41px;
-
+        margin-bottom: 44px;
+        @include for-tablet-landscape-up {
+            line-height: 3.7rem;
+        }
     }
 
     &__table {
@@ -17,11 +19,30 @@
     }
 
     &__date {
+        position: relative;
         font-weight: 500;
-        padding: 16px 0 16px;
+        padding: 16px 0;
         text-align: center;
+        @include for-tablet-landscape-up{
+            text-align: left;
+            padding: 20px;
+        }
     }
-
+    &__btn-cal{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -45%);
+        width: 35px;
+        height: 35px;
+        background-color: rgb(255, 255, 255);
+        background-image: url(./../images/free-time/Calendar.svg);
+        background-repeat: no-repeat;
+        background-size: 18px;
+        background-position: 50% 50%;
+        border: 1px solid #C4C4C4;
+        border-radius: 3px;
+    }
     &__window {
         border-top: 0.5px solid #C7C7C7;
         padding: 28px 20px;

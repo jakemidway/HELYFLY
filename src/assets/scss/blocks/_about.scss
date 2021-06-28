@@ -1,91 +1,127 @@
 .about {
     padding-top: 13px;
     margin-bottom: 21px;
-    &__avtor{
+
+    @include for-tablet-landscape-up {
+        padding: 0;
+    }
+
+    &__avtor {
         position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
+
         @media (min-width: 576px) {
             margin-bottom: 10px;
         }
+
         @media (min-width: 768px) {
             padding-top: 52px;
         }
+
         @media (min-width: 1280px) {
             width: 45%;
             padding-top: 66px;
         }
     }
-    &__flex-wrapper{
+
+    &__flex-wrapper {
         @media (min-width:1280px) {
-            display: flex;  
-            flex-direction: row-reverse;  
+            display: flex;
+            flex-direction: row-reverse;
         }
     }
-    &__avat{
-        margin-bottom: 21px;   
+
+    &__avat {
+        position: relative;
+        margin-bottom: 21px;
+
+        @include for-tablet-landscape-up {
+            margin-bottom: 80px;
+        }
+
+        @include for-desktop-up {
+            margin-bottom: 17px;
+        }
+        
     }
-    &__heart{
+
+    &__heart {
         position: absolute;
         top: -13px;
-        right: 0;
-        @media (min-width: 1280px) {
-            right: 113px;
-            top: 52px;
+        right: -74px;
+
+        @include for-desktop-up {
+            
+        }
+
+        @include for-big-desktop-up {
+            
         }
     }
-    &__name{
+
+    &__name {
         font-size: 1.8rem;
         line-height: 2.19rem;
         margin-bottom: 7px;
         font-weight: 500;
     }
-    &__position{
+
+    &__position {
         font-size: 1.4rem;
         line-height: 2.19rem;
         margin-bottom: 7px;
     }
-    &__link{
+
+    &__link {
         font-size: 1.4rem;
         line-height: 2.19rem;
         margin-bottom: 23px;
         font-weight: 500;
     }
-    &__content{
+
+    &__content {
         @media (min-width: 1280px) {
             width: 55%;
             padding-top: 36px;
         }
-        p{  
+
+        p {
             margin-bottom: 8px;
             line-height: 24.18px;
             font-size: 1.6rem;
-            &:nth-child(2){
+
+            &:nth-child(2) {
                 margin-bottom: 50px;
             }
         }
     }
-    &__title{
+
+    &__title {
         font-size: 1.8rem;
         font-weight: 500;
         margin-bottom: 14px;
     }
-    &__btn-show{
+
+    &__btn-show {
         margin-bottom: 30px;
+
         @media (min-width: 578px) {
             margin-bottom: 40px;
         }
     }
-    &__hr{
+
+    &__hr {
         visibility: hidden;
         margin-top: 10px;
         background-color: #C7C7C7;
         width: 100%;
         height: 1px;
-        @media (min-width: 576px) {
-            display: block;
+
+        @include for-tablet-landscape-up {
+            visibility: visible;
             margin-top: 43px;
         }
     }

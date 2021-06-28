@@ -2,10 +2,11 @@
     position: relative;
     height: 334px;
     overflow: hidden;
-    
+
     @media (min-width: 576px) {
         height: 383px;
     }
+
     @media (min-width: 768px) {
         height: auto;
         padding-bottom: 94px;
@@ -27,11 +28,13 @@
             width: 100%;
             text-align: left;
         }
+
         @media (min-width: 1280px) {
             font-weight: 500;
             font-size: 2.8rem;
             margin-bottom: 40px;
         }
+
         @media (min-width: 1440px) {
             font-size: 2rem;
             margin-bottom: 33px;
@@ -83,6 +86,7 @@
         @media (max-width: 767px) {
             display: none;
         }
+
         @media (min-width: 1280px) {
             grid-template-columns: 1fr 1fr 1fr 1fr;
         }
@@ -91,37 +95,47 @@
     &__item-grid {
         width: 277px;
         height: 185px;
-        
-        &_hidden{
+
+        &_hidden {
             display: none;
         }
+
         &:nth-child(2n+1) {
             justify-self: end;
         }
     }
 
     &__btn-show {
-        position: absolute;       
+        position: absolute;
         height: 17px;
         left: 50%;
         transform: translateX(-50%);
         bottom: 32px;
         font-size: 1.7rem;
-        span{
+
+        span {
             padding: 0 5px;
         }
+
         @media (max-width: 767px) {
             display: none;
-        }       
+        }
     }
-    &__arr{
+
+    &__arr {
         transition: 0.2s all;
     }
-    &__hr{
-        position: relative;
-        top: 90px;
-        background-color: #C7C7C7;
-        width: 100%;
-        height: 1px;
+
+    &__hr {
+        display: none;
+        @media (min-width: 768px) {
+            display: block;
+            position: relative;
+            top: 90px;
+            background-color: #C7C7C7;
+            width: 100%;
+            height: 1px;
+        }
+
     }
 }
