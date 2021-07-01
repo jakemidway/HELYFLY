@@ -1,25 +1,25 @@
 .reviews{
     position: relative;
     border-top: 1px solid #C7C7C7;
-    
-    
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    align-items:center;
+    
 
     @include for-tablet-landscape-up{
         flex-direction: row;
         justify-content: flex-start;
     }
     
+   
+   
+   
     &::after{
         position: absolute;
         display: block;
         content:'';
         width: 120px;
         height: 22px;
-        left: 0;
-        top: 14px;
+        
         background-image: url(./../images/services/5stars.png);
         background-repeat: no-repeat;
         
@@ -32,13 +32,12 @@
     }
     
     &::before{
-        position: absolute;
         display: block;
         content:'';
         width: 41px;
         height: 41px;
         background-image: url(./../images/services/cup.svg);
-        background-repeat: no-repeat;
+        background-repeat: no-repeat; 
     }
     &__text-reviews{
         margin-bottom: 7px;

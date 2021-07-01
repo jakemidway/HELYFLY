@@ -1,7 +1,7 @@
 .free-time {
     margin-bottom: 45px;
     @include for-big-desktop-up{
-        margin-bottom: 82px;
+        margin-bottom: 82px ;
     }
     &__title {
         font-family: Montserrat;
@@ -139,10 +139,18 @@
         }
     }
 
+
+
+
+
+
+
     &__reviews {
-        padding: 31px 0 42px 69px;
+        padding: 31px 0 42px 20px;
         font-size: 1.3rem;
         line-height: 1.9rem;
+ 
+ 
         @include for-tablet-landscape-up{
             border: none;
             font-size: 1.8rem;
@@ -150,8 +158,8 @@
             padding: 51px 0 47px 61px;
         }
         &::after {
-            left: 68px;
-            bottom: 4px;
+            left: 61px;
+            top: 56px;
         }
 
         &::before {
