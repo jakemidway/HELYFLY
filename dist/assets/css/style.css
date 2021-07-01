@@ -999,9 +999,13 @@ li {
 }
 
 .map {
+  margin-bottom: 40px;
+}
+
+.map__yan {
   position: relative;
   height: 423px;
-  margin-bottom: 52px;
+  margin-bottom: 40px;
 }
 
 .map__check {
@@ -1075,6 +1079,46 @@ li {
   font-size: 1.4rem;
 }
 
+.map__check-slide {
+  margin-top: 52px;
+  width: 274px;
+  margin: auto;
+  border: 1px solid #c7c7c7;
+  padding: 52px 30px 20px;
+}
+
+.map__slide-photographer {
+  background: url(./../images/map/photographer.png) no-repeat;
+  padding-left: 78px;
+  min-height: 67px;
+}
+
+.map__slide-window {
+  position: relative;
+  margin-bottom: 40px;
+  min-height: 164px;
+}
+
+.map__slide-item {
+  position: absolute;
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.map__slide-item_active {
+  opacity: 1;
+}
+
 .map .ymaps-2-1-78-gotoymaps,
 .map .ymaps-2-1-78-controls__control_toolbar,
 .map .ymaps-2-1-78-controls__control,
@@ -1084,7 +1128,7 @@ li {
 }
 
 @media (min-width: 320px) {
-  .map {
+  .map__yan {
     height: 509px;
   }
 }
@@ -1207,6 +1251,11 @@ li {
     font-size: 1.8rem;
     line-height: 2.6rem;
     padding: 51px 0 47px 61px;
+  }
+
+  .map__check-slide {
+    width: 400px;
+    padding: 20px 95px;
   }
 }
 
@@ -1459,6 +1508,10 @@ li {
   .map__check {
     display: block;
   }
+
+  .map__check-slide {
+    display: none;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -1503,6 +1556,8 @@ li {
 .webp .banner { background: url(./../images/banner/helimain-mob.webp) 62% center no-repeat; }
 
 .webp .map__photographer { background: url(./../images/map/photographer.webp) no-repeat; }
+
+.webp .map__slide-photographer { background: url(./../images/map/photographer.webp) no-repeat; }
 
 @media (min-width: 577px) {
 
