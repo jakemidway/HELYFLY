@@ -1,0 +1,81 @@
+.map{
+    position: relative;
+    height: 423px;
+    margin-bottom: 52px;
+    
+    @include for-tablet-portrait-up{
+        height: 509px;
+    }
+    &__check{
+        display: none;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        
+        max-height: 100%;
+        background-color: #fff;
+        padding: 51px 34px 54px 30px;
+        font-size: 1.8rem;
+        line-height: 2.1rem;
+        border: 1px solid $colorGrey;
+        @include for-big-desktop-up{
+            display: block;
+        }
+    }
+    &__item{
+        margin-bottom: 35px;
+        padding-left: 79px;
+        min-height: 61px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        &:nth-child(1){
+            background: url(./../images/map/1.svg) no-repeat;
+        }
+        &:nth-child(2){
+            background: url(./../images/map/2.svg) no-repeat;
+        }
+        &:nth-child(3){
+            background: url(./../images/map/3.svg) no-repeat;
+        }
+        
+    }
+    &__photographer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-left: 79px;
+        width: 356px;
+        min-height: 61px;
+        background: url(./../images/map/photographer.png) no-repeat;
+    }
+    &__first-text{
+        font-weight: 500;
+        margin-bottom: 12px;
+    }
+    &__second-text{
+        font-size: 1.6rem;
+    }
+    &__link{
+        font-size: 1.4rem;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    .ymaps-2-1-78-gotoymaps,
+    .ymaps-2-1-78-controls__control_toolbar,
+    .ymaps-2-1-78-controls__control,
+    .ymaps-2-1-78-map-copyrights-promo,
+    .ymaps-2-1-78-copyright__agreement
+    {
+        display: none;
+    }
+}
