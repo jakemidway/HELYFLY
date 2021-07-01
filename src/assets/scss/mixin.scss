@@ -1,5 +1,5 @@
 // брейкпойнтs
-// for-phone-only               min-width 320px
+// for-phone-only               max -width 320px
 // for-tablet-portrait-up       min-width 320px
 // for-tablet-landscape-up      min-width 576px
 // for-desktop-up               min-width 768px
@@ -31,6 +31,12 @@
 
 @mixin for-big-desktop-up {
     @media (min-width: 1280px) {
+        @content;
+    }
+}
+
+@mixin for-big-desktop1440-up {
+    @media (min-width: 1440px) {
         @content;
     }
 }

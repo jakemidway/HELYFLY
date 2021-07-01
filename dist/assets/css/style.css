@@ -487,7 +487,9 @@ li {
   display: block;
   content: '';
   width: 120px;
-  height: 41px;
+  height: 22px;
+  left: 0;
+  top: 14px;
   background-image: url(./../images/services/5stars.png);
   background-repeat: no-repeat;
 }
@@ -900,7 +902,7 @@ li {
 .free-time__title {
   font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 500;
   font-size: 2.6rem;
   line-height: 3.2rem;
   text-align: center;
@@ -921,12 +923,13 @@ li {
 }
 
 .free-time__btn-cal {
+  display: none;
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -45%);
-      -ms-transform: translate(-50%, -45%);
-          transform: translate(-50%, -45%);
+  -webkit-transform: translate(-42%, -38%);
+      -ms-transform: translate(-42%, -38%);
+          transform: translate(-42%, -38%);
   width: 35px;
   height: 35px;
   background-color: white;
@@ -938,9 +941,18 @@ li {
   border-radius: 3px;
 }
 
+.free-time__btn-cal:hover {
+  border: 1px solid gray;
+}
+
+.free-time__btn-cal:active {
+  border: 1px solid black;
+}
+
 .free-time__window {
   border-top: 0.5px solid #C7C7C7;
   padding: 28px 20px;
+  position: relative;
 }
 
 .free-time__window div {
@@ -986,7 +998,7 @@ li {
 
 .free-time__reviews::after {
   left: 68px;
-  bottom: 5px;
+  bottom: 4px;
 }
 
 .free-time__reviews::before {
@@ -998,6 +1010,22 @@ li {
   .container {
     width: 576px;
     padding: 0 35px;
+  }
+
+  .reviews {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+
+  .reviews::after {
+    position: static;
+    display: inline-block;
+    background-position: 0 43%;
   }
 
   .reviews__text-reviews {
@@ -1074,7 +1102,28 @@ li {
 
   .free-time__date {
     text-align: left;
-    padding: 20px;
+    padding: 26px 20px 20px;
+  }
+
+  .free-time__btn-cal {
+    display: block;
+  }
+
+  .free-time__window {
+    padding: 18px 20px 8px;
+  }
+
+  .free-time__btn {
+    position: absolute;
+    top: 24%;
+    right: 20px;
+  }
+
+  .free-time__reviews {
+    border: none;
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    padding: 51px 0 47px 61px;
   }
 }
 
@@ -1208,6 +1257,29 @@ li {
   .about__avat {
     margin-bottom: 17px;
   }
+
+  .free-time__title {
+    font-size: 2rem;
+    text-align: left;
+    line-height: 3.2rem;
+    margin: 53px 0 23px;
+  }
+
+  .free-time__date {
+    padding: 26px 30px 20px;
+  }
+
+  .free-time__btn-cal {
+    left: 40%;
+  }
+
+  .free-time__window {
+    padding: 18px 30px 8px;
+  }
+
+  .free-time__btn {
+    right: 30px;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -1282,6 +1354,20 @@ li {
     width: 55%;
     padding-top: 36px;
   }
+
+  .free-time__title {
+    font-size: 2.8rem;
+    line-height: 3.6rem;
+    margin-bottom: 30px;
+  }
+
+  .free-time__table {
+    max-width: 770px;
+  }
+
+  .free-time__btn-cal {
+    left: 34%;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -1296,6 +1382,12 @@ li {
   .gallery__title {
     font-size: 2rem;
     margin-bottom: 33px;
+  }
+
+  .free-time__title {
+    font-size: 2rem;
+    line-height: 3.2rem;
+    margin: 44px 0 23px;
   }
 }
 

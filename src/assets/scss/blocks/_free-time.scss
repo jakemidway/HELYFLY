@@ -2,7 +2,7 @@
     &__title {
         font-family: Montserrat;
         font-style: normal;
-        font-weight: normal;
+        font-weight: 500 ;
         font-size: 2.6rem;
         line-height: 3.2rem;
         text-align: center;
@@ -10,12 +10,31 @@
         @include for-tablet-landscape-up {
             line-height: 3.7rem;
         }
+        @include for-desktop-up{
+            font-size: 2rem;
+            text-align: left;
+            line-height: 3.2rem;
+            margin: 53px 0 23px;
+        }
+        @include for-big-desktop-up{
+            font-size: 2.8rem;
+            line-height: 3.6rem;
+            margin-bottom: 30px;
+        }
+        @include for-big-desktop1440-up{
+            font-size: 2rem;
+            line-height: 3.2rem;
+            margin: 44px 0 23px;
+        }
     }
 
     &__table {
         border: 1px solid #C7C7C7;
         font-size: 1.8rem;
         line-height: 2.633rem;
+        @include for-big-desktop-up{
+            max-width: 770px;
+        }
     }
 
     &__date {
@@ -25,14 +44,18 @@
         text-align: center;
         @include for-tablet-landscape-up{
             text-align: left;
-            padding: 20px;
+            padding: 26px 20px 20px;
+        }
+        @include for-desktop-up{
+            padding: 26px 30px 20px;
         }
     }
     &__btn-cal{
+        display: none;
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -45%);
+        transform: translate(-42%,-38%);
         width: 35px;
         height: 35px;
         background-color: rgb(255, 255, 255);
@@ -42,12 +65,34 @@
         background-position: 50% 50%;
         border: 1px solid #C4C4C4;
         border-radius: 3px;
+        @include for-tablet-landscape-up{
+            display: block;
+        }
+        @include for-desktop-up{
+            left: 40%;
+        }
+        @include for-big-desktop-up {
+            left: 34%;
+        }
+        
+        &:hover{
+            border: 1px solid hsl(0, 0%, 50%);
+        }
+        &:active{
+            border: 1px solid hsl(0, 0%, 0%);
+        }
     }
     &__window {
         border-top: 0.5px solid #C7C7C7;
         padding: 28px 20px;
+        position: relative;
 
-
+        @include for-tablet-landscape-up{
+            padding: 18px 20px 8px;
+        }
+        @include for-desktop-up{
+            padding: 18px 30px 8px;
+        }
         & div {
             margin-bottom: 10px;
         }
@@ -69,7 +114,14 @@
         line-height: 1.7rem;
         font-weight: 500;
         transition: .2s ease;
-
+        @include for-tablet-landscape-up{
+            position: absolute;
+            top: 24%;
+            right: 20px;
+        }
+        @include for-desktop-up{
+            right: 30px;
+        }
         &:hover {
             background-color: $colorAccent;
             color: #fff;
@@ -86,10 +138,15 @@
         padding: 31px 0 42px 69px;
         font-size: 1.3rem;
         line-height: 1.9rem;
-
+        @include for-tablet-landscape-up{
+            border: none;
+            font-size: 1.8rem;
+            line-height: 2.6rem;
+            padding: 51px 0 47px 61px;
+        }
         &::after {
             left: 68px;
-            bottom: 5px;
+            bottom: 4px;
         }
 
         &::before {
