@@ -108,11 +108,51 @@
         display: flex;
         flex-direction: column;
         align-items:center;
-        
         width: 100%;
+        padding-top: 86px;
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        transition: all 0.6s;
+        &:nth-child(1){
+            background-image: url(./../images/map/1.svg);
+        }
+        &:nth-child(2){
+            background-image: url(./../images/map/2.svg);
+        }
+        &:nth-child(3){
+            background-image: url(./../images/map/3.svg);
+        }
         &_active{
             opacity: 1;
         }
+    }
+
+    &__btn{
+        position: absolute;
+        width: 10px;
+        height: 19px;
+        top: 14%;
+        background: url(./../images/map/Arrow.svg) no-repeat;
+        border: none;
+        &:hover{
+            filter: drop-shadow(0 0 1px $colorText);
+        }
+        &:active{
+            filter: drop-shadow(0 0 0.1rem $colorTextDisable);
+        }
+        &_prev{
+            
+        }
+        &_next{
+            right: 0;
+            transform: rotate(180deg);
+        }
+    }
+
+    &__slide-first-text{
+        font-size: 1.6rem;
+        font-weight: 500;
+        margin-bottom: 10px;
     }
 
 

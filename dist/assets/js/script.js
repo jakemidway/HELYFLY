@@ -57,9 +57,9 @@ let positionSliderX = 0;
 slider.style.width = widthSlider + 'px';
 
 
-console.log(widthSlider);
-console.log(slides.length);
-console.log('длинна слайдера с отступамми ' + widthSlider);
+// console.log(widthSlider);
+// console.log(slides.length);
+// console.log('длинна слайдера с отступамми ' + widthSlider);
 
 function visibelSlide(countSlider) {
     // sliders[countSlider].style.display="block";
@@ -110,3 +110,55 @@ btnShowFoto.onclick = function () {
     }
     
 }
+
+
+
+// sider for map
+
+const mapBtnSlidePrev = document.querySelector('.map__btn_prev');
+const mapBtnSlideNext = document.querySelector('.map__btn_next');
+
+let mapItems = document.querySelectorAll('.map__slide-item');
+let countMapSlider = 0;
+
+function toggleItemAct(i) {
+    mapItems[i].classList.toggle('map__slide-item_active');
+}
+function cleanItemAct() {
+    for (let item of mapItems){
+        if (item.classList == 'map__slide-item map__slide-item_active'){
+            item.classList.toggle('map__slide-item_active')
+        }   
+    }
+}
+
+
+mapBtnSlideNext.onclick = function () {
+    
+    if (countMapSlider < mapItems.length - 1){
+        countMapSlider++;  
+    }else{
+        countMapSlider = 0;
+        
+    }
+    
+    
+    
+    cleanItemAct()
+    toggleItemAct(countMapSlider)
+
+}
+
+mapBtnSlidePrev.onclick = function () {
+    if (countMapSlider > 0){
+        countMapSlider--;
+    }else{
+        countMapSlider = mapItems.length - 1;
+    }
+    
+    cleanItemAct()
+    toggleItemAct(countMapSlider)
+}
+
+
+
