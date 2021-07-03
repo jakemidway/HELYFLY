@@ -112,7 +112,7 @@
         padding-top: 86px;
         background-repeat: no-repeat;
         background-position: 50% 0;
-        transition: all 0.6s;
+        transition: all 0.4s;
         &:nth-child(1){
             background-image: url(./../images/map/1.svg);
         }
@@ -124,6 +124,27 @@
         }
         &_active{
             opacity: 1;
+        }
+    }
+
+    &__dots-slide{
+        position: absolute;
+        width: 52px;
+        display: flex;
+        justify-content: space-between;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &__dot{
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border: 1px solid $colorTextDisable;
+        transition: all 0.4s;
+        &_active{
+            background-color: $colorAccent;
+            border: 1px solid $colorTextDisable;
         }
     }
 
@@ -155,7 +176,17 @@
         margin-bottom: 10px;
     }
 
-
+    &__slide-photographer{
+        p:first-child{
+            margin-bottom: 5px;
+        }
+        p:nth-child(2){
+            margin-bottom: 7px;
+        }
+        a{
+            line-height: 2.1rem;
+        }
+    }
 
 
 

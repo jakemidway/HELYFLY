@@ -119,16 +119,23 @@ const mapBtnSlidePrev = document.querySelector('.map__btn_prev');
 const mapBtnSlideNext = document.querySelector('.map__btn_next');
 
 let mapItems = document.querySelectorAll('.map__slide-item');
+let mapDots = document.querySelectorAll('.map__dot');
 let countMapSlider = 0;
 
 function toggleItemAct(i) {
     mapItems[i].classList.toggle('map__slide-item_active');
+    mapDots[i].classList.toggle('map__dot_active');
 }
 function cleanItemAct() {
     for (let item of mapItems){
         if (item.classList == 'map__slide-item map__slide-item_active'){
             item.classList.toggle('map__slide-item_active')
-        }   
+        }
+    }
+    for (let dot of mapDots){
+        if (dot.classList == 'map__dot map__dot_active'){
+            dot.classList.toggle('map__dot_active');
+        }
     }
 }
 
