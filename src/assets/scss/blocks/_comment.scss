@@ -1,0 +1,107 @@
+.comment{
+    position: relative;
+    padding-bottom: 60px;
+    &__title{
+        font-size: 2.6rem;
+        text-align: center;
+        font-weight: 400;
+        margin-bottom: 50px;
+        @include for-desktop-up{
+            text-align: left;
+        }
+    }
+    &__list{
+        max-width: 668px;
+    }
+    &__avatar{
+        width: 84px;
+        height: 84px;
+        float: left;
+        margin: 0 18px 9px 0;
+        @include for-desktop-up{
+            width: 101px;
+            height: 101px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+    &__avtor{
+        padding-top: 6px;
+        margin-bottom: 6px;
+        font-weight: 500;  
+        font-size: 1.6rem;  
+        
+    }
+    &__who{
+        margin-bottom: 7px;
+        line-height: 2.3rem;
+    }
+    &__stars{
+        margin-left: 102px;
+        width: 118px;
+        height: 17px;
+        margin-bottom: 31px;
+        background: url(./../images/services/5stars.png) no-repeat;
+        @include for-desktop-up{
+            margin-left: 118px;
+        }
+    }
+    &__summary{
+        margin-bottom: 14px;
+        padding-left: 21px;
+        line-height: 2.3rem;
+        color: $colorTextDisable;
+        background: url(./../images/comment/check.svg) 0 2px no-repeat;
+        @include for-desktop-up{
+            margin-left: 120px;
+        }
+    }
+    &__text{
+        line-height: 2.1rem;
+        margin-bottom: 34px;
+        @include for-tablet-landscape-up{
+            margin-bottom: 11px;
+        }
+        @include for-desktop-up{
+            margin-left: 120px;
+        }
+    }
+    &__date{
+        line-height: 2.6rem;
+        @include for-desktop-up{
+            margin-left: 120px;
+        }
+    }
+    &__line{
+        margin: 36px 0 30px;
+        height: 1px;
+        background-color: $colorGrey;
+        border: none;
+        @include for-desktop-up{
+            margin-left: 120px;
+        }
+    }
+
+    &__show-more{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 20px;
+        border: none;
+        background-color: inherit;
+        color: $colorLinks;
+        width: 178px;
+        height: 19px;
+        text-align: left;
+        font-size: 1.7rem;
+        background: url(./../images/comment/Arrow.svg) 100% 50% no-repeat;
+        &:hover{
+           color: $colorLinksHover;
+        }
+        &:active{
+           color: $colorLinksActive;
+        }
+    }
+}

@@ -1,5 +1,8 @@
 .map {
     margin-bottom: 40px;
+    @include for-desktop-up{
+        margin-bottom: 120px;
+    }
 
     &__yan {
         position: relative;
