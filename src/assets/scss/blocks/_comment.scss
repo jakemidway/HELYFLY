@@ -1,6 +1,6 @@
 .comment{
     position: relative;
-    padding-bottom: 60px;
+    padding-bottom: 146px;
     &__title{
         font-size: 2.6rem;
         text-align: center;
@@ -46,6 +46,7 @@
         background: url(./../images/services/5stars.png) no-repeat;
         @include for-desktop-up{
             margin-left: 118px;
+            
         }
     }
     &__summary{
@@ -56,6 +57,7 @@
         background: url(./../images/comment/check.svg) 0 2px no-repeat;
         @include for-desktop-up{
             margin-left: 120px;
+            
         }
     }
     &__text{
@@ -75,7 +77,7 @@
         }
     }
     &__line{
-        margin: 36px 0 30px;
+        margin: 36px 0 0px;
         height: 1px;
         background-color: $colorGrey;
         border: none;
@@ -88,7 +90,7 @@
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        bottom: 20px;
+        bottom: 87px;
         border: none;
         background-color: inherit;
         color: $colorLinks;

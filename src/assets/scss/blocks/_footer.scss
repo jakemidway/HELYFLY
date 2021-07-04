@@ -1,0 +1,42 @@
+.footer{
+    &__flex-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 24px;
+    }
+    &__social-block{
+        width: 137px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__copyright{
+        position: relative;
+        padding-top: 73px;
+    }
+    &__cards{
+        position: absolute;
+        top: 0;
+        display: flex;
+        width: 84px;
+        justify-content: space-between;
+        @include for-tablet-portrait-up{
+            
+        }
+    }
+    &__input{
+        position: absolute;
+        top: 0;
+        right: 15px;
+        @include for-tablet-portrait-up{
+            
+        }
+    }
+    &__copy-down{
+         
+    }
+    &__copy-text{
+        text-align: center;
+    }
+}

@@ -1222,7 +1222,7 @@ li {
 
 .comment {
   position: relative;
-  padding-bottom: 60px;
+  padding-bottom: 146px;
 }
 
 .comment__title {
@@ -1281,7 +1281,7 @@ li {
 }
 
 .comment__line {
-  margin: 36px 0 30px;
+  margin: 36px 0 0px;
   height: 1px;
   background-color: #c7c7c7;
   border: none;
@@ -1293,7 +1293,7 @@ li {
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
-  bottom: 20px;
+  bottom: 87px;
   border: none;
   background-color: inherit;
   color: #5184ec;
@@ -1310,6 +1310,59 @@ li {
 
 .comment__show-more:active {
   color: #7ea5f1;
+}
+
+.footer__flex-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 24px;
+}
+
+.footer__social-block {
+  width: 137px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__copyright {
+  position: relative;
+  padding-top: 73px;
+}
+
+.footer__cards {
+  position: absolute;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 84px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__input {
+  position: absolute;
+  top: 0;
+  right: 15px;
+}
+
+.footer__copy-text {
+  text-align: center;
 }
 
 @media (min-width: 320px) {
